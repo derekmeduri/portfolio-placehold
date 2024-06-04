@@ -25,6 +25,7 @@
     "autoprefixer": "latest",
     "postcss": "latest",
     "tailwindcss": "latest",
+    "next": "^14.2.3",
     "typescript": "latest"
   }
 }
