@@ -53,7 +53,7 @@ const AboutSection = () => {
     };
 
     return (
-        <section className="text-white">
+        <section id="about" className="text-white">
             <div className="md:grid md:grid-cols-2 gap-8 items-center px-4 py-8 xl:gap-16 sm:py-16 xl:px-16">
                 <Image priority={true} src="/images/derekmeduripicture.jpg" alt="derek meduri with dogs" width={500} height={500}/>
                 <div className="mt-2 md:mt-0 text-left flex flex-col h-full">

@@ -122,13 +122,15 @@ const ProjectSection = () => {
                
             </div>
              <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            {projectData.map((project => <ProjectCard 
+            {filteredProjects.map((project => 
+            <ProjectCard 
             key={project.id} title={project.title} 
             description={project.description} 
             imgUrl={project.image} 
             tags={project.tags} 
             gitUrl={project.gitUrl} 
-            previewUrl={project.previewUrl} />))}
+            previewUrl={project.previewUrl} />
+            ))}
             </div>
         </section>
     )
