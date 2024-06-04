@@ -41,7 +41,7 @@ const EmailSection = () => {
 
     return <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
         <div>
-            <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
+            <h5 className="text-xl font-bold text-white my-2">Let&aposs Connect</h5>
             <p className="text-white mb-4 max-w-md">
                 {" "}
                 If you would like to discuss a project or a job opportunity please fill out the form and I will take it from there! I Look forward to bringing your visions to life. 

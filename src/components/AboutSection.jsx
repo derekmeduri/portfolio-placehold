@@ -26,7 +26,7 @@ const TAB_DATA = [
         content: (
             <ul className="list-disc pl-2">
                 <li>The Ohio State University, College of Engineering Full Stack Web Development Certificate Program</li>
-                <li>Kent State Univeristy, Bachelor's of Sceince in Fashion Merchandising</li>
+                <li>Kent State Univeristy, Bachelor&aposs of Sceince in Fashion Merchandising</li>
             </ul>
         )
     },
