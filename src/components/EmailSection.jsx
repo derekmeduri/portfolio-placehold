@@ -39,8 +39,7 @@ const EmailSection = () => {
 
     };
 
-    return <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
-        <div></div>
+    return <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4">
         <div>
             <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
             <p className="text-white mb-4 max-w-md">
@@ -63,7 +62,8 @@ const EmailSection = () => {
                 </div>
         </div>
         <div>
-            <form className="flex flex-col">
+            {emailSubmmited ? ( <p className="text-green-500 text-sm mt-2">Email Sent!</p>) : ( 
+            <form className="flex flex-col" onSubmit={handleSubmit}>
                 <div className="mb-6">
                 <label htmlFor="email" type='email' className="text-white block mb-2 text-sm font-medium ">Email</label>
                 <input type="email"
@@ -98,11 +98,10 @@ const EmailSection = () => {
                 type="submit"
                 className="bg-teal-700 hover:bg-teal-800 text-white font-medium py-2.5 px-5 rounded-lg w-full"> Send Message</button>
 
-                { emailSubmmited && (
-                    <p className="text-green-500 text-sm mt-2"> Message Sent! </p>
-                )}
+               
                 
             </form>
+            )}
         </div>
     </section>
 }
